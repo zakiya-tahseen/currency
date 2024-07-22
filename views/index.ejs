@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Exchange</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color:antiquewhite;
+    }
+    .container {
+        padding: 20px;
+        border-radius: 8px;
+        background-color:hotpink;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Exchange</h2>
+        <form action="/" method="post">
+            <input type="text" name="cno" placeholder="Enter amount" required>
+            <select name="fcurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+            </select>
+            <select name="tocurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <p><%= servervalue %></p>
+    </div>
+</body>
+</html>
